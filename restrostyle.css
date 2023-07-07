@@ -1,0 +1,367 @@
+@font-face {
+    font-family: Monstro;
+    src: url(Monstro\ Solid.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Nav Bar*/
+.nav{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: Monstro;
+    background-color: #CDA434;
+    letter-spacing: 2px;
+    padding: 1vw 1vw;
+    border-bottom: 0.25vw solid black;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    width: 20vw;
+    margin: 0vw 1vw;
+}
+
+.logo h2{
+    font-size: 3vw;
+    font-weight: 100;
+    padding: 0.7vw 1vw 0.25vw 1vw;
+}
+
+.logo img{
+    width: 3vw;
+    height: auto;
+    margin: 0.5vw 0vw;
+}
+
+.right_nav{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav a{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color:  black;
+    text-decoration: none;
+    margin: 0vw 1vw;
+}
+
+/*Intro section*/
+
+.intro{
+    padding-top: 5vw;
+    background-color: black;
+    width: 100vw;
+    color: white;
+}
+.intro1{
+    display: flex;
+    justify-content:space-between;
+    padding: 2.75vw 0vw;
+}
+
+.intro1 img{
+    width: 15vw;
+}
+.text{
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.text h2{
+    color: white;
+    font-family: Monstro;
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 1vw;
+}
+
+span{
+    color: #CDA434;
+}
+
+.text p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;
+    margin: 1vw 0vw;
+}
+
+.text button{
+    margin: 1vw 0 4vw 0; 
+    padding: 1vw;
+    font-size: 2vw;
+    font-family: Monstro;
+    border-radius: 0.5vw;
+    transition: transform 500ms;
+}
+
+.text button:hover{
+    background-color: #CDA434;
+    outline: 0.1vw solid #CDA434;
+    outline-offset: 0.2vw;
+    transform: scale(1.05);
+}
+
+.logos img{
+    margin: 0vw 4vw;
+    width: 10vw;
+}
+
+/*Menu*/
+
+.menu_nav{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    font-family: Monstro;
+    height: 30vw;
+}
+
+.menu_nav img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.om h2{
+    color: white;
+    padding: 8vw 0 0vw 2vw;
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+.type{
+    display: flex;
+    padding: 3vw 0 4vw 2vw;
+}
+
+.type button{
+    font-family: Monstro;
+    font-weight: 100;
+    font-size: 1.5vw;
+    margin-right: 1.5vw;
+    background-color: black;
+    border: none;
+}
+
+.type button:hover{
+    color: white;
+}
+
+.deactive{
+    color: grey;
+}
+
+.active{
+    color: white;
+    background-image: url(assets/UNDERLINE.png);
+    background-repeat: no-repeat;
+    background-position: 0vw 1.5vw;
+    background-size: contain;
+}
+
+/*Menu Items*/
+
+.items{
+    width: 100vw;
+    background-color: #CDA434;
+    padding-bottom: 4vw;
+}
+.container{
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    color: black;
+    grid-template-columns: auto auto;
+    gap: 5vw;
+}
+
+.card{
+    padding:1vw;
+    border: 0.15vw solid black;
+    border-radius: 0.25vw;
+}
+.card div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card h4{
+    font-size: 1.5vw;
+    font-family: Monstro;
+    font-weight: 100;
+}
+
+.card div p{
+    margin: 1vw 0vw 0 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8vw ;
+}
+
+.card div h2{
+    font-family: Monstro;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+/*Contact*/
+
+.form{
+    display: flex;
+}
+
+.contact{
+    background-color: black;
+    width: 100vw;
+    padding:  4vw 2vw;
+}
+
+.contact h2{
+    color: white;
+    font-size: 3vw;
+    font-family: Monstro;
+    font-weight: 100;
+}
+
+.form_container{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.form_container h3{
+    color: #CDA434;
+    font-size: 1.5vw;
+    font-family: Monstro;
+    font-weight: 100;
+    margin: 2vw 0vw;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin: 2vw 4vw;
+}
+
+input[type=text],input[type=email]{
+    background-color: #02020c;
+    border: 1px solid #CDA434;
+    font-size: 1vw;
+    color: #CDA434;
+    border-radius: 2.5px;
+    height: 2.5vw;
+    padding: 0.75vw 0vw 0.25vw  0.2vw;
+    margin: 0.5vw 0vw;
+}
+
+.form_name::placeholder,.form_email::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1vw;
+    color:#CDA434;
+}
+
+textarea{
+    color: #CDA434;
+    font-size: 1vw;
+    background-color: #02020c;
+    border: 1px solid #CDA434;
+    border-radius: 2.5px;
+    height: 10vw;
+}
+
+textarea::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #CDA434;
+    font-size: 1vw;
+    padding: 0.15vw 0vw 0.25vw  0.2vw;
+}
+
+iframe{
+    width: 30vw;
+    height: 25vw;
+    margin: 0vw 4vw;
+}
+
+form button{
+    width: 12.5vw;
+    padding: 0.5vw 0vw;
+    margin: 1vw 0vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    background-color: #CDA434;
+    color: black;
+    font-family: Monstro;
+    font-weight: 100;
+}
+
+form button:hover{
+    outline: 1px solid #CDA434;
+    outline-offset: 0.25vw;
+}
+
+input:focus{
+    color: #CDA434;
+    font-size: 1vw;
+    border: 1px solid #CDA434;
+    outline: 1px solid #CDA434;
+    outline-offset: 0.25vw;
+}
+
+textarea:focus{
+    color: #CDA434;
+    font-size: 1vw;
+    border: 1px solid #CDA434;
+    outline: 1px solid #CDA434;
+    outline-offset: 0.25vw;
+}
+
+
+/*Footer*/
+
+.footer{
+    width: 100vw;
+    background-color: #CDA434;
+    font-family: Monstro;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.footer p{
+    font-size: 1vw;
+    margin: 0 1vw;
+}
+
+.icons{
+    margin: 0 1vw;
+    font-size: 1vw;
+}
+
+.icons i{
+    margin:0 0.25vw;
+}
+
+.icons i:hover{
+    cursor: pointer;
+}

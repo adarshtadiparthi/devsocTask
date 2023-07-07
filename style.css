@@ -1,0 +1,255 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: Poiret;
+}
+
+@font-face {
+    font-family: Poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2{
+    font-family: Poiret;
+    color: #CDA434;
+    padding: 3vw 0vw;
+    font-size: 3.5vw;
+}
+
+.title img{
+    width: 28.5vw;
+}
+
+
+@media only screen and (min-width: 1000px){
+    #image{
+        width: 15vw;
+        height: 15vw;
+        margin: 2vw 2vw;
+        transition: transform 0.5s;
+    }
+
+    .upper-decor , .lower-decor{
+        display: flex;
+        position: relative;
+        width: 75vw;  
+        margin: auto;
+        justify-content: space-between;  
+    }
+
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 75%;  
+        margin: 0 7.5vw 0 15vw;
+        gap: 0vw 0vw;
+    }
+
+    .details{
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        opacity: 0;
+    }
+    
+    
+    .details h3{
+        color:  #CDA434;
+        font-size: 2vw;
+    }
+    
+    .details a{
+        color: #CDA434;
+        font-size: 1.5vw;
+        text-decoration: double underline ;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    #image{
+        width: 25vw;
+        height: 25vw;
+        margin: 3vw 2vw;
+        transition: transform 0.5s;
+    }
+
+    .upper-decor , .lower-decor{
+        position: relative;
+        display: flex;
+        position: relative;
+        width: 75vw;  
+        margin: auto;
+        justify-content: space-between;  
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 75%;  
+        margin: 0 0vw 0 17.5vw;
+        gap: 0vw 0vw;
+    }
+
+    .details{
+        position: absolute;
+        top: 40%;
+        left: 12.5%;
+        opacity: 0;
+    }
+      
+    .details h3{
+        color:  #CDA434;
+        font-size: 2.5vw;
+    }
+    
+    .details a{
+        color: #CDA434;
+        font-size: 1.5vw;
+        text-decoration: double underline ;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+    #image{
+        width: 30vw;
+        height: 30vw;
+        margin: 5vw 0vw;
+        transition: transform 0.5s;
+    }
+
+    .upper-decor , .lower-decor{
+        display: flex;
+        position: relative;
+        width: 70%;  
+        margin: auto;
+        justify-content: space-between;  
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 70%;  
+        margin: 0 4vw 0 17vw;
+        gap: 0vw 0vw;
+    }
+
+    .details{
+        position: absolute;
+        top: 40%;
+        left: 12.5%;
+        opacity: 0;
+    }
+    
+    
+    .details h3{
+        color:  #CDA434;
+        font-size: 3vw;
+    }
+    
+    .details a{
+        color: #CDA434;
+        text-decoration: double underline ;
+        font-size: 2.5vw;
+        padding-top: 5vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #image{
+        width: 60vw;
+        height: 50vw;
+        margin: 2vw 0vw;
+        transition: transform 0.5s;
+    }
+
+    .upper-decor , .lower-decor{
+        display: flex;
+        position: relative;
+        width: 67.5%;  
+        margin: auto;
+        justify-content: space-between;  
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 60%;  
+        margin: auto;
+        gap: 0vw 0vw;
+    }
+
+    .details{
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        opacity: 0;
+    }
+    
+    
+    .details h3{
+        color:  #CDA434;
+        font-size: 4vw;
+    }
+    
+    .details a{
+        color: #CDA434;
+        text-decoration: double underline ;
+        font-size: 2.5vw;
+        padding-top: 5vw;
+    }
+}
+
+.container:hover #image{
+    transform: scale(0.85);
+    opacity: 0.5;
+    outline: 0.25vw solid #CDA434;
+    outline-offset: 0.5vw;
+}
+
+.container{
+    position: relative;
+}
+
+.container:hover .details{
+    opacity: 1;
+}
+
+ .upper-decor img , .lower-decor img{
+    width: 5vw;
+}
+
+.tl{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tr{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.br{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
